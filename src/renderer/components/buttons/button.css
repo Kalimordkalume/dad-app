@@ -1,15 +1,24 @@
 /* button.css */
 
+
+:root {
+    --color-text-button-default-primary: var(--color-neutral-100);
+    --color-text-button-hover-primary: var(--color-neutral-200);
+}
+
+
 /* Base styles */
 .btn {
     font-family: var(--font-family-base), serif;
     font-size: var(--font-size-lg);
     line-height: var(--line-height-normal);
     border-radius: var(--radius-md);
-    padding: var(--spacing-2) var(--spacing-4);
+    padding: var(--spacing-2) var(--spacing-6);
     border-width: var(--radius-sm);
-    border-style: solid;
+    border-style: hidden;
     cursor: pointer;
+    font-weight: var(--font-weight-regular);
+    text-wrap: nowrap;
 }
 
 /* =====================
@@ -17,18 +26,20 @@
 ===================== */
 .btn-primary {
     background: var(--color-button-primary-bg);
-    color: var(--color-button-primary-text);
-    border-color: var(--color-button-primary-bg);
+    color: var(--color-text-button-default-primary);
 }
 
 .btn-primary:hover {
     background: var(--color-button-primary-hover);
     border-color: var(--color-button-primary-hover);
+    color: var(--color-text-button-hover-primary);
 }
 
 .btn-primary:active {
     background: var(--color-button-primary-active);
     border-color: var(--color-button-primary-active);
+    transform: scale(0.98);
+    font-weight: var(--font-weight-bold);
 }
 
 .btn-primary.btn-disabled {
@@ -36,6 +47,35 @@
     color: var(--color-text-disabled);
     border-color: transparent;
     cursor: not-allowed;
+}
+
+/* =====================
+   LINK BUTTON
+===================== */
+.btn-link {
+    background: none;
+    color: var(--color-brand);
+    border:none;
+    font-size: var(--font-size-sm);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+}
+
+.btn-link:hover {
+    color: var(--color-brand-hover);
+    text-decoration: underline;
+    text-underline-offset: var(--spacing-1);
+}
+.btn-link:active {
+    color: var(--color-brand-active);
+    transform: scale(0.98);
+}
+
+.btn-link:disabled {
+    color: var(--color-brand-subtle);
+    cursor: not-allowed;
+    text-decoration: none;
+    opacity: 0.6;
 }
 
 /* =====================

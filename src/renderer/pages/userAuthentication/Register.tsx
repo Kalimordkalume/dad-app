@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import SwapThemeButton from "../components/SwapTheme/SwapThemeButton";
-import Title from "../components/titles/Title";
+import SwapThemeButton from "../../components/SwapTheme/SwapThemeButton";
+import Title from "../../components/titles/Title";
 import './Register.css'
-import TextField from "../components/text-fields/TextField";
-import Button from "../components/buttons/Button";
-import {registerUser} from "../../authService";
-import SpinnerLoader from "../components/SpinnerLoader";
+import TextField from "../../components/text-fields/TextField";
+import Button from "../../components/buttons/Button";
+import {registerUser} from "../../../authService";
+import SpinnerLoader from "../../components/SpinnerLoader";
 import {useNavigate} from "react-router-dom";
 
 

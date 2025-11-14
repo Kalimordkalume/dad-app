@@ -22,9 +22,8 @@ const TextField: FC<TextFieldProps> = ({
     const id = inputProps.id || `${inputProps.name}-${Math.random().toString(36).slice(2, 8)}`;
 
     return (
-        <div style={{
-            margin:"2rem 2rem",
-            }} className={classNames}>
+        <div
+            className={classNames}>
 
                 {label && <label className={"textfield__label"} htmlFor={id}>{label}</label>}
                 <input

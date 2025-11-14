@@ -1,9 +1,11 @@
-@import 'tokens/color-palette.css';
 @import 'tokens/font-family.css';
+@import 'tokens/color-palette.css';
 @import 'tokens/scales.css';
 @import 'tokens/semantic.css';
 
 body {
-    font-family: var(--font-family-base) sans-serif;
+    margin: 0;
+    height: 100vh;
+    font-family: var(--font-family-base);
     background-color: var(--color-bg-primary);
 }

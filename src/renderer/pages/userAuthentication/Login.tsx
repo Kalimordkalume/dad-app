@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from 'react';
-import Title from "../components/titles/Title";
+import Title from "../../components/titles/Title";
 import './Login.css';
-import Button from "../components/buttons/Button";
-import TextField from "../components/text-fields/TextField";
-import SwapThemeButton from "../components/SwapTheme/SwapThemeButton";
+import Button from "../../components/buttons/Button";
+import TextField from "../../components/text-fields/TextField";
+import SwapThemeButton from "../../components/SwapTheme/SwapThemeButton";
 import {useNavigate} from "react-router-dom";
-import SpinnerLoader from "../components/SpinnerLoader";
-import {loginUser} from "../../authService";
+import SpinnerLoader from "../../components/SpinnerLoader";
+import {loginUser} from "../../../authService";
 
 
 interface LoginFormData {
@@ -34,7 +34,7 @@ const Login = () => {
 
     useEffect(() => {
         if (success && countdown === 0) {
-            navigate("/home");
+            navigate("/empire");
         }
     }, [success, countdown, navigate]);
 

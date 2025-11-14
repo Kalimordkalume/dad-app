@@ -1,7 +1,7 @@
 .textfield {
     display: flex;
     flex-direction: column;
-    width: min-content;
+    width: 100%;
     font-family: var(--font-family-base), serif ;
     gap: var(--spacing-2);
 }
@@ -22,6 +22,7 @@
     padding: var(--btn-padding-y) var(--btn-padding-x);
     border-radius: var(--radius-md);
     background-color: transparent;
+    color: var(--color-text-primary);
     border: 2px solid var(--color-border-default);
 }
 
@@ -50,7 +51,7 @@
 }
 
 .textfield__input:focus::placeholder {
-    color: var(--color-text-primary);
+    color: var(--color-text-secondary);
 }
 
 .textfield__helper {
@@ -60,4 +61,20 @@
 
 }
 
+/* Error */
 
+.textfield--error > .textfield__label {
+    color: var(--color-error-text);
+}
+.textfield--error > .textfield__input {
+    border-color: var(--color-border-error);
+}
+.textfield--error > .textfield__helper {
+    color: var(--color-error-text);
+}
+
+.textfield--error > .textfield__input:focus {
+    border-color: var(--color-error-text);
+    box-shadow: 0 0 0 2px var(--color-error-text);
+    outline: none;
+}

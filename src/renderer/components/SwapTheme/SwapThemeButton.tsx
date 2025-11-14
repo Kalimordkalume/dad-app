@@ -1,17 +1,24 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Moon from "../icons/Moon";
 import {Sun} from "../icons";
+import './SwapTheme.css'
 
-type ThemeUI = "light" | "dark";
 
 
 const SwapThemeButton = () => {
-    const [theme, setTheme] = useState<ThemeUI>("light");
+    const [darkMode, setDarkMode] = useState(false);
+
+    useEffect(() => {
+        document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : 'light');
+    }, [darkMode]);
 
     return (
-        <button onClick={() => {setTheme(theme === "light" ? "light" : "dark")}}>
+        <button className={"swapTheme"} onClick={() => {setDarkMode(prev=>!prev)}} >
             {
-                theme === "light" ? (<Moon width={"100%"} height={"100%"} fill={"inherit"}></Moon>) : (<Sun width={"100%"} height={"100%"} fill={"inherit"}></Sun>)
+                darkMode === true ?
+                    (<Sun width={"100%"} height={"100%"} fill={"inherit"}></Sun>) :
+                    (<Moon width={"100%"} height={"100%"} fill={"inherit"}></Moon>)
+
             }
             
         </button>

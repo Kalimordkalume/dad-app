@@ -1,4 +1,4 @@
-export class Coordinates {
+export class PlanetCoordinates {
     constructor(public galaxy:number, public solarSystem:number, public planetPosition:number) {
 
         this.ensureGalaxyIsValid(galaxy);
