@@ -1,0 +1,45 @@
+.register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: var(--spacing-8);
+    min-width: min-content;
+    max-width: calc(40*16px);
+    background-color: var(--color-surface-default);
+    width: 100%;
+    border-radius: var(--radius-xxl);
+}
+
+.register-container > :first-child {
+    margin-top: var(--spacing-6);
+}
+
+.register-container > :last-child {
+    margin-bottom: var(--spacing-6);
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+    width: 280px;
+}
+.register-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback-wrapper > p {
+
+    color: var(--color-text-primary)
+}

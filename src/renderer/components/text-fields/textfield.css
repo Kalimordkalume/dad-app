@@ -1,0 +1,63 @@
+.textfield {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    font-family: var(--font-family-base), serif ;
+    gap: var(--spacing-2);
+}
+
+
+
+/* Label */
+.textfield__label {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-secondary);
+    margin-left: var(--spacing-3);
+}
+
+/* Input Base */
+.textfield__input {
+    font-size: var(--font-size-lg);
+    padding: var(--btn-padding-y) var(--btn-padding-x);
+    border-radius: var(--radius-md);
+    background-color: transparent;
+    border: 2px solid var(--color-border-default);
+}
+
+/* PlaceHolder */
+
+.textfield__input::placeholder {
+    color: var(--color-text-tertiary);
+}
+
+/* Hover */
+
+.textfield__input:hover::placeholder {
+    color: var(--color-brand-subtle);
+}
+
+.textfield__input:hover {
+    border-color:var(--color-border-brand);
+    box-shadow: 0 0 0 2px var(--color-shadow);
+}
+/* Focus */
+
+.textfield__input:focus {
+    border-color: var(--color-border-focus);
+    box-shadow: 0 0 0 3px var(--color-state-focus-ring);
+    outline: none;
+}
+
+.textfield__input:focus::placeholder {
+    color: var(--color-text-primary);
+}
+
+.textfield__helper {
+    font-size:var(--font-size-xs);
+    color: var(--color-text-tertiary);
+    margin: 0 0 0 var(--spacing-3);
+
+}
+
+

@@ -1,0 +1,40 @@
+.title {
+    font-family: var(--font-family-heading) sans-serif;
+    margin: 0;
+    color: var(--color-text-primary);
+}
+
+.title--h1 {
+    font-size: var(--font-size-5xl);
+    font-weight: var(--font-weight-bold);
+}
+.title--h2 {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+}
+.title--h3 {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-semibold);
+}
+.title--h4 {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-semibold);
+}
+.title--h5 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-medium);
+}
+.title--h6 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+}
+
+.title--align-left {
+    text-align: left;
+}
+.title--align-center {
+    text-align: center;
+}
+.title--align-right {
+    text-align: right;
+}

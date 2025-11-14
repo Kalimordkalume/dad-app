@@ -1,0 +1,53 @@
+:root {
+    /* Primary Color */
+    --color-primary-50: hsla(233, 33%, 90%, 1);
+    --color-primary-100: hsla(236, 33%, 83%, 1);
+    --color-primary-200: hsla(237, 33%, 76%, 1);
+    --color-primary-300: hsla(241, 34%, 69%, 1);
+    --color-primary-400: hsla(244, 34%, 62%, 1);
+    --color-primary-500: hsla(247, 34%, 55%, 1);
+    --color-primary-600: hsla(250, 34%, 48%, 1);
+    --color-primary-700: hsla(254, 34%, 41%, 1);
+    --color-primary-800: hsla(256, 33%, 34%, 1);
+    --color-primary-900: hsla(258, 33%, 27%, 1);
+    --color-primary-950: hsla(261, 33%, 20%, 1);
+
+    /* Neutral Color */
+    --color-neutral-50: hsla(240, 10%, 90%, 1);
+    --color-neutral-100: hsla(233, 10%, 83%, 1);
+    --color-neutral-200: hsla(235, 11%, 76%, 1);
+    --color-neutral-300: hsla(244, 11%, 69%, 1);
+    --color-neutral-400: hsla(243, 10%, 62%, 1);
+    --color-neutral-500: hsla(247, 11%, 55%, 1);
+    --color-neutral-600: hsla(252, 11%, 48%, 1);
+    --color-neutral-700: hsla(256, 11%, 41%, 1);
+    --color-neutral-800: hsla(259, 11%, 34%, 1);
+    --color-neutral-900: hsla(260, 11%, 27%, 1);
+    --color-neutral-950: hsla(264, 10%, 20%, 0.15);
+
+    /* Red Color */
+    --color-red-50: hsla(334, 45%, 90%, 1);
+    --color-red-100: hsla(338, 45%, 83%, 1);
+    --color-red-200: hsla(340, 45%, 76%, 1);
+    --color-red-300: hsla(345, 44%, 69%, 1);
+    --color-red-400: hsla(347, 44%, 62%, 1);
+    --color-red-500: hsla(350, 45%, 55%, 1);
+    --color-red-600: hsla(353, 44%, 48%, 1);
+    --color-red-700: hsla(356, 44%, 41%, 1);
+    --color-red-800: hsla(359, 45%, 34%, 1);
+    --color-red-900: hsla(2, 45%, 27%, 1);
+    --color-red-950: hsla(5, 45%, 20%, 1);
+
+    /* Green Color */
+    --color-green-50: hsla(141, 57%, 90%, 1);
+    --color-green-100: hsla(144, 58%, 83%, 1);
+    --color-green-200: hsla(147, 57%, 76%, 1);
+    --color-green-300: hsla(150, 57%, 69%, 1);
+    --color-green-400: hsla(153, 58%, 62%, 1);
+    --color-green-500: hsla(156, 57%, 55%, 1);
+    --color-green-600: hsla(159, 58%, 48%, 1);
+    --color-green-700: hsla(162, 58%, 41%, 1);
+    --color-green-800: hsla(165, 57%, 34%, 1);
+    --color-green-900: hsla(169, 58%, 27%, 1);
+    --color-green-950: hsla(172, 57%, 20%, 1);
+}

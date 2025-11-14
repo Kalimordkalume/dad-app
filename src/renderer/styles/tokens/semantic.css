@@ -1,0 +1,196 @@
+/* ========================================================
+   semantic-tokens.css
+   Semantic Color Tokens — Light & Dark
+   Comentado con uso recomendado
+   ======================================================== */
+
+/* ============================
+   LIGHT THEME (default)
+   ============================ */
+:root {
+    /* =====================
+       BRAND
+       ===================== */
+    --color-brand: var(--color-primary-600);           /* Color principal de la marca, usado en botones, links, iconos importantes */
+    --color-brand-hover: var(--color-primary-700);     /* Hover de elementos de marca */
+    --color-brand-active: var(--color-primary-800);    /* Estado activo o presionado de elementos de marca */
+    --color-brand-subtle: var(--color-primary-200);    /* Version suave / de fondo de elementos de marca, como badges o highlights */
+
+    /* =====================
+       BACKGROUNDS
+       ===================== */
+    --color-bg-primary: var(--color-neutral-100);      /* Fondo principal de la app */
+    --color-bg-secondary: var(--color-neutral-200);   /* Fondo secundario, secciones o cards */
+    --color-bg-tertiary: var(--color-neutral-300);    /* Fondo terciario, overlays o contenedores secundarios */
+    --color-bg-inverse: var(--color-neutral-950);     /* Fondo inverso, para texto o componentes sobre fondos claros */
+
+    /* =====================
+       SURFACES
+       ===================== */
+    --color-surface-default: var(--color-neutral-50);       /* Superficie base de componentes, cards, paneles */
+    --color-surface-elevated: var(--color-neutral-100);    /* Superficie elevada, navbar, modals, dropdowns */
+    --color-surface-hover: var(--color-neutral-200);       /* Hover de superficies interactivas */
+    --color-surface-active: var(--color-neutral-300);      /* Superficie activa o seleccionada */
+    --color-surface-inverse: var(--color-neutral-900);     /* Superficie para modo inverso (sobre texto claro) */
+
+    /* =====================
+       TEXT
+       ===================== */
+    --color-text-primary: var(--color-neutral-900);      /* Texto principal */
+    --color-text-secondary: var(--color-neutral-700);    /* Texto secundario, subtítulos o labels */
+    --color-text-tertiary: var(--color-neutral-500);     /* Texto terciario, placeholders o helper text */
+    --color-text-inverse: var(--color-neutral-50);       /* Texto sobre fondos oscuros */
+    --color-text-brand: var(--color-primary-600);        /* Texto de enlaces o elementos importantes de marca */
+    --color-text-disabled: var(--color-neutral-300);     /* Texto deshabilitado */
+    --color-text-error: var(--color-red-600);           /* Texto de error */
+    --color-text-success: var(--color-green-600);       /* Texto de éxito o confirmación */
+
+    /* =====================
+       BORDERS
+       ===================== */
+    --color-border-default: var(--color-neutral-600);    /* Borde base de inputs, cards, contenedores */
+    --color-border-subtle: var(--color-neutral-400);     /* Borde suave, separación visual ligera */
+    --color-border-strong: var(--color-neutral-800);     /* Borde fuerte, para destacar áreas importantes */
+    --color-border-brand: var(--color-primary-500);      /* Borde en componentes de marca, botones o focus */
+    --color-border-focus: var(--color-primary-600);      /* Borde o outline de focus */
+    --color-border-error: var(--color-red-600);          /* Borde de estados de error */
+    --color-border-success: var(--color-green-600);      /* Borde de estados de éxito */
+
+    /* =====================
+       NAV & SIDEBAR
+       ===================== */
+    --nav-bg: var(--color-surface-elevated);            /* Fondo de barra de navegación principal */
+    --nav-text: var(--color-text-primary);             /* Texto de la navbar */
+    --nav-active-bg: var(--color-state-hover);         /* Fondo de item activo en navbar */
+    --nav-active-text: var(--color-text-brand);        /* Texto de item activo en navbar */
+
+    --sidebar-bg: var(--color-surface-default);        /* Fondo del sidebar */
+    --sidebar-border: var(--color-border-subtle);      /* Borde lateral del sidebar */
+
+    /* =====================
+       BUTTONS
+       ===================== */
+    --color-button-primary-bg: var(--color-brand);         /* Fondo principal de botón */
+    --color-button-primary-hover: var(--color-brand-hover);/* Hover del botón primario */
+    --color-button-primary-active: var(--color-brand-active); /* Estado activo del botón primario */
+    --color-button-primary-text: var(--color-text-inverse);  /* Texto del botón primario */
+
+    --color-button-secondary-bg: var(--color-surface-default); /* Fondo secundario */
+    --color-button-secondary-hover: var(--color-surface-hover); /* Hover botón secundario */
+    --color-button-secondary-active: var(--color-surface-active); /* Activo botón secundario */
+    --color-button-secondary-text: var(--color-text-primary);    /* Texto botón secundario */
+
+    --color-button-outline-border: var(--color-border-brand);     /* Borde outline */
+    --color-button-outline-hover: var(--color-brand-subtle);      /* Hover de outline */
+    --color-button-outline-active: var(--color-brand-active);
+    --color-button-outline-text: var(--color-brand);              /* Texto de outline */
+
+    /* =====================
+       STATES
+       ===================== */
+    --color-state-hover: var(--color-brand-subtle);     /* Color para hover genérico */
+    --color-state-active: var(--color-primary-100);    /* Color para estado activo genérico */
+    --color-state-focus-ring: var(--color-primary-400); /* Outline de focus */
+    --color-state-inactive: var(--color-primary-100);
+    /* =====================
+       FEEDBACK
+       ===================== */
+    --color-success-bg: var(--color-green-100);        /* Fondo de mensaje de éxito */
+    --color-success-border: var(--color-green-400);    /* Borde de éxito */
+    --color-success-text: var(--color-green-700);      /* Texto de éxito */
+
+    --color-error-bg: var(--color-red-100);            /* Fondo de mensaje de error */
+    --color-error-border: var(--color-red-400);        /* Borde de error */
+    --color-error-text: var(--color-red-700);          /* Texto de error */
+
+    /* =====================
+       OVERLAYS & SHADOWS
+       ===================== */
+    --color-overlay: hsla(0, 0%, 0%, 0.4);             /* Overlay para modals, popups */
+    --color-shadow: var(--color-neutral-950);          /* Sombra estándar */
+}
+
+/* ============================
+   DARK THEME
+   ============================ */
+[data-theme="dark"] {
+    /* BRAND */
+    --color-brand: var(--color-primary-500);
+    --color-brand-hover: var(--color-primary-400);
+    --color-brand-active: var(--color-primary-300);
+    --color-brand-subtle: var(--color-primary-900);
+
+    /* BACKGROUNDS */
+    --color-bg-primary: var(--color-neutral-950);
+    --color-bg-secondary: var(--color-neutral-900);
+    --color-bg-tertiary: var(--color-neutral-800);
+    --color-bg-inverse: var(--color-neutral-50);
+
+    /* SURFACES */
+    --color-surface-default: var(--color-neutral-900);
+    --color-surface-elevated: var(--color-neutral-800);
+    --color-surface-hover: var(--color-neutral-700);
+    --color-surface-active: var(--color-neutral-600);
+    --color-surface-inverse: var(--color-neutral-50);
+
+    /* TEXT */
+    --color-text-primary: var(--color-neutral-50);
+    --color-text-secondary: var(--color-neutral-200);
+    --color-text-tertiary: var(--color-neutral-400);
+    --color-text-inverse: var(--color-neutral-950);
+    --color-text-brand: var(--color-primary-300);
+    --color-text-disabled: var(--color-neutral-500);
+    --color-text-error: var(--color-red-400);
+    --color-text-success: var(--color-green-400);
+
+    /* BORDERS */
+    --color-border-default: var(--color-neutral-700);
+    --color-border-subtle: var(--color-neutral-800);
+    --color-border-strong: var(--color-neutral-600);
+    --color-border-brand: var(--color-primary-400);
+    --color-border-focus: var(--color-primary-300);
+    --color-border-error: var(--color-red-500);
+    --color-border-success: var(--color-green-500);
+
+    /* NAV & SIDEBAR */
+    --nav-bg: var(--color-surface-elevated);
+    --nav-text: var(--color-text-primary);
+    --nav-active-bg: var(--color-state-hover);
+    --nav-active-text: var(--color-text-brand);
+
+    --sidebar-bg: var(--color-surface-default);
+    --sidebar-border: var(--color-border-subtle);
+
+    /* BUTTONS */
+    --color-button-primary-bg: var(--color-brand);
+    --color-button-primary-hover: var(--color-brand-hover);
+    --color-button-primary-active: var(--color-brand-active);
+    --color-button-primary-text: var(--color-text-inverse);
+
+    --color-button-secondary-bg: var(--color-surface-default);
+    --color-button-secondary-hover: var(--color-surface-hover);
+    --color-button-secondary-active: var(--color-surface-active);
+    --color-button-secondary-text: var(--color-text-primary);
+
+    --color-button-outline-border: var(--color-border-brand);
+    --color-button-outline-hover: var(--color-brand-subtle);
+    --color-button-outline-text: var(--color-brand);
+
+    /* STATES */
+    --color-state-hover: var(--color-primary-900);
+    --color-state-active: var(--color-primary-800);
+    --color-state-focus-ring: var(--color-primary-400);
+
+    /* FEEDBACK */
+    --color-success-bg: var(--color-green-900);
+    --color-success-border: var(--color-green-600);
+    --color-success-text: var(--color-green-200);
+
+    --color-error-bg: var(--color-red-900);
+    --color-error-border: var(--color-red-600);
+    --color-error-text: var(--color-red-200);
+
+    /* OVERLAYS & SHADOWS */
+    --color-overlay: hsla(0, 0%, 100%, 0.1);
+    --color-shadow: hsla(0, 0%, 100%, 0.05);
+}
